@@ -25,3 +25,23 @@ Depends:
  ptux-sdk-armhf,
  mkos-boneblackwireless,
  ${misc:Depends}
+
+Package: ptux-sdk-bonegreen
+Architecture: all
+Description: Pragmatux SDK for Beaglebone Green
+ Meta-package referencing SDK tools for the
+ Beaglebone Green target (http://beagleboard.org)
+Depends:
+ ptux-sdk-armhf,
+ mkos-bonegreen,
+ ${misc:Depends}
+
+Package: ptux-sdk-bonegreenwireless
+Architecture: all
+Description: Pragmatux SDK for Beaglebone Green Wireless
+ Meta-package referencing SDK tools for the
+ Beaglebone Green Wireless target (http://beagleboard.org)
+Depends:
+ ptux-sdk-armhf,
+ mkos-bonegreenwireless,
+ ${misc:Depends}
