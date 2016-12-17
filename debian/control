@@ -4,6 +4,7 @@ Priority: extra
 Maintainer: Bill Gatliff <bgat@billgatliff.com>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.3
+Vcs-Git: https://github.com/bgat/ptux-sdk-boneblack.git
 
 Package: ptux-sdk-boneblack
 Architecture: all
@@ -13,4 +14,14 @@ Description: Pragmatux SDK for Beaglebone Black
 Depends:
  ptux-sdk-armhf,
  mkos-boneblack,
+ ${misc:Depends}
+
+Package: ptux-sdk-boneblackwireless
+Architecture: all
+Description: Pragmatux SDK for Beaglebone Black Wireless
+ Meta-package referencing SDK tools for the
+ Beaglebone Black Wireless target (http://beagleboard.org)
+Depends:
+ ptux-sdk-armhf,
+ mkos-boneblackwireless,
  ${misc:Depends}
